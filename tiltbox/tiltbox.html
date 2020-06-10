@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <title>JS Image Tilt</title>
+
+    <header>
+    <!-- Required Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Your own stylesheet -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    </header>
+
+    <body>
+        <div class="container">
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://i.postimg.cc/ZqJQfxjm/grand.jpg">
+                </div>
+                <div class="contentBox">
+                    <h2>Tilt Box Hover Effects</h2>
+                    <p>Enjoy the images.</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://i.postimg.cc/zfpc4HPg/me..jpg">
+                </div>
+                <div class="contentBox">
+                    <h2>Tilt Box Hover Effects</h2>
+                    <p>Enjoy the images.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <script type="text/javascript" src="vanilla-tilt.js"></script>
+        <script type="text/javascript">
+            VanillaTilt.init(document.querySelectorAll(".box"), {
+                max: 25,
+                speed: 400
+            });
+        
+        </script>
+    </body>
+
+</html>

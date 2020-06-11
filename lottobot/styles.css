@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+::-webkit-scrollbar {
+    width: 0;
+}
+#scrollPath {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: rgba(255,255,255,0.05);
+}
+header {
+    font-family: 'Signika', sans-serif;
+    text-align: left;
+    padding: 50px;
+    justify-content: left;
+    align-items: left;
+    background-size: cover;
+    background: rgba(0,0,0,0.4);
+}
+.headerbox {  
+    font-family: 'Signika', sans-serif;
+    display: flex;
+    
+  
+
+}
+body {
+    background: url(https://images.unsplash.com/photo-1591042344856-adaf4928a71e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
+    background-size: cover;
+    
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.wavy span {
+    position: relative;
+    display: inline-block;
+    color: #000;
+    font-size: 5em;
+    text-transform: uppercase;
+    animation: animate 2.5s ease-in-out infinite;
+    animation-delay: calc(0.05s * var(--i));
+}
+@keyframes animate {
+  0% {
+    transform: translateY(0px);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
+  40%,100% {
+    transform: translateY(0px);
+  }
+}
+
+.smallMainText span {
+    position: relative;
+    display: inline-block;
+    color: #000;
+    font-size: 3em;
+    text-transform: uppercase;
+    animation: animate 6.5s ease-in-out infinite;
+    animation-delay: calc(0.4s * var(--i));
+}
+.glow {
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px rgb(104, 71, 117), 0 0 30px rgb(163, 102, 204), 0 0 50px #623eb8, 0 0 30px;
+    }
+    
+    to {
+      text-shadow: 0 0 20px rgb(104, 71, 117), 0 0 50px rgb(163, 102, 204), 0 0 70px #623eb8, 0 0 50px;
+    }
+  }
+.first-img {
+    align-items: right;
+    width: 50px;
+    height: 250px;
+    padding-left: 500px;
+}
+
+.infobox1 {
+    width: 1000px;
+    height: 500px;
+    padding: 50px;
+    background: rgba(202, 198, 198, 0.4);
+    display: flex;
+}
+
+.img1 {
+    padding-right: 20px;
+}
+.infobox2 {
+    position: relative;
+    
+    width: 1000px;
+    height: 500px;
+    padding: 50px;
+    background: rgba(202, 198, 198, 0.4);
+    display: flex;
+}
+
+.img2 {
+    width: 450px;
+    padding-left: 50px;
+}
+
+.infoBottom {
+    padding: 100px;
+    font-size: 2em;
+    text-align: center;
+
+}

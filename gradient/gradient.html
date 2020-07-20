@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <title>Gradient Backgrounds</title>
+
+    <header>
+    <!-- Required Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Your own stylesheet -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    </header>
+
+    <body>
+       <div class="container">
+        <div class="box"><img src="https://images.unsplash.com/photo-1591824390307-891be1626e6d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"></div>
+        <div class="box"><img src="https://images.unsplash.com/photo-1591508767053-2a8565061fb8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"></div>
+        <div class="box"><img src="bird3.jpg"></div>
+        <div class="box"><img src="https://images.unsplash.com/photo-1518961039426-cdc80759ff57?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1306&q=80"></div>
+        <div class="box"><img src="https://images.unsplash.com/photo-1494247622028-9a5bbfbf529a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80"></div>
+
+       </div>
+
+       <script src="grade.js"></script>
+       <script type="text/javascript">
+           window.addEventListener('load', function(){
+               /*
+                   A NodeList of all your image containers (Or a single Node).
+                   The library will locate an <img /> within each
+                   container to create the gradient from.
+                */
+               Grade(document.querySelectorAll('.box'))
+           })
+       </script>
+    </body>
+
+</html>
